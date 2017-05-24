@@ -11,6 +11,7 @@ import configureStore from './store/configureStore';
 import 'styles/bootstrap.min.css';
 import 'styles/styles.scss';
 
+
 const store = configureStore();
 const history = syncHistoryWithStore(browserHistory, store);
 
@@ -48,6 +49,7 @@ if (module.hot) {
     render(
       <AppContainer errorReporter={Redbox}>
         <NextApp store={store} history={history} />
+   hell
       </AppContainer>,
       rootEl
     );
